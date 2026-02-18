@@ -1,45 +1,3 @@
-# # def add_product():
-# #     products={}
-# #     n=int(input("enter the number of products you want to store="))
-# #     for i in range(n):
-# #         brand=input("enter the brand name of product=")
-# #         name=input(f"enter the name of {i+1} product=")
-# #         price=int(input(f"enter the price of{i+1} product="))
-# #         products[name]=price
-# #         products["brand"]=brand
-# #         # products[brand]=brand
-# #         # products[name]=price
-# #     print(products)
-# # add_product()
-
-
-# store={
-#     101:{"brand_name":"nike","product_item":"shoes","price":15000,"units_in_stocks":50},
-#     102:{"brand_name":"addidas","product_item":"shoes","price":20000,"units_in_stocks":70},
-#     103:{"brand_name":"jordan","product_item":"shoes","price":12000,"units_in_stocks":30}
-#     }
-
-# # def for_calling():
-# #     while True:
-# #         id=int(input("enter the product id="))
-# #         if id==0:
-# #             break
-# #         product=store.get(id)
-# #         if product:
-# #             print(product)
-# #         else:
-# #             print("product not found pls enter correct id")
-# # for_calling()   
-
-# def biling():
-#     while True:
-#         selection=input("Select the product =")
-#         if selection not in store:
-#             print("product not found,pls enter valid product")
-#         else:
-#             print(store[selection])
-# biling()
-
 drinks={
     "coke":{"price":100,"stock":250},
     "pepsi":{"price":90,"stock":225},
@@ -140,3 +98,4 @@ mode=input("enter the mode=")
 if mode=="user":
     user()
     
+
