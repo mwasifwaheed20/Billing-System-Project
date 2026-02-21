@@ -76,26 +76,19 @@ def biling():
         print(f"Cost of {Fore.GREEN}{item.upper()}{Style.RESET_ALL} is",item_cost)
         return total_bill
 
-def user():
-    total_bill=0
-    while True:
-        choose=int(input("Choose the catagory=").strip())
-        if choose==" ":
-            print("pls enter a number ")
-            continue
-        if choose==0:
-            print(f"{Fore.CYAN}Your Total Bill is:{Style.RESET_ALL}{Fore.LIGHTMAGENTA_EX}{total_bill}{Style.RESET_ALL}")
-            break
-        if choose not in catagory:
-            print(f"{Fore.RED}Invalid Catagory,pls choose correct one{Style.RESET_ALL} ")
-        else:
-            selected_catagory=catagory[choose]
-            print(selected_catagory.keys())
-            bill=biling()
-            total_bill+=bill
-print("uesr/admin mode")
-mode=input("enter the mode=")
-if mode=="user":
-    user()
-    
-
+total_bill=0
+while True:
+    choose=int(input("Choose the catagory=").strip())
+    if choose==" ":
+        print("pls enter a number ")
+        continue
+    if choose==0:
+        print(f"{Fore.CYAN}Your Total Bill is:{Style.RESET_ALL}{Fore.LIGHTMAGENTA_EX}{total_bill}{Style.RESET_ALL}")
+        break
+    if choose not in catagory:
+        print(f"{Fore.RED}Invalid Catagory,pls choose correct one{Style.RESET_ALL} ")
+    else:
+        selected_catagory=catagory[choose]
+        print(selected_catagory.keys())
+        bill=biling()
+        total_bill+=bill
